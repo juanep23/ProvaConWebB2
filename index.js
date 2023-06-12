@@ -17,7 +17,6 @@ function ehPrimo(number) {
     var inputNumber = prompt('Digite um número:');
     var number = parseInt(inputNumber);
   
-    
       if (ehPrimo(number)) {
         alert(number + ' é um número primo.');
       } else {
@@ -29,12 +28,11 @@ function ehPrimo(number) {
 
   //Questão 2
   function validarSenha() {
-    const senha = prompt('Digite sua senha:');
-  
-    const possuiMaiuscula = /[A-Z]/.test(senha);
-    const possuiMinuscula = /[a-z]/.test(senha);
-    const possuiNumero = /\d/.test(senha);
-    const possuiTamanhoMinimo = senha.length >= 8;
+    var senha = prompt('Digite sua senha:');
+    var possuiMaiuscula = /[A-Z]/.test(senha);
+    var possuiMinuscula = /[a-z]/.test(senha);
+    var possuiNumero = /\d/.test(senha);
+    var possuiTamanhoMinimo = senha.length >= 8;
   
     if (possuiMaiuscula && possuiMinuscula && possuiNumero && possuiTamanhoMinimo) {
       alert('Parabéns sua senha é válida.');
@@ -60,7 +58,6 @@ function ehPrimo(number) {
   
   function verificarFatorial() {
     var numero = parseInt(prompt('Digite um número para calcular seu fatorial:'));
-  
     var fatorial = calcularFatorial(numero);
     alert(`O fatorial de ${numero} é ${fatorial}`);
   }
